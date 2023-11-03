@@ -1,0 +1,8 @@
+.toggle {
+    margin: 0;
+}
+
+.toggle svg {
+    position: relative;
+    top: 8px;
+}
