@@ -1,0 +1,10 @@
+.card {
+    height: 500px;
+    width: 700px;
+    border: 1px solid salmon;
+}
+
+#projectCard {
+    background-color: rgb(250, 241, 190);
+    border-radius: 20%;
+}
