@@ -1,0 +1,30 @@
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    gap:  10px;
+  border: 10px solid black;
+  padding: 10px;
+}
+
+.item {
+  background-color: coral;
+  border: 2px solid red;
+  padding: 5px;
+  text-align: center;
+  font-size: 40px;
+}
