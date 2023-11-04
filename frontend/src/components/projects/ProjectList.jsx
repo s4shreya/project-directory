@@ -1,15 +1,21 @@
+import myMessMeal from '../../images/my-mess-meal.png';
+import comparisonSortingAlgorithm from '../../images/comparison-sorting-algorithm.png';
+import quiz from '../../images/quiz.png';
+
 const ProjectList = [
   {
     no: 1,
     name: "My Mess Meal",
-    description: "",
-    technologiesUsed: ["React JS"],
+    image: myMessMeal,
+    description: "website",
+    technologiesUsed: ["React JS", "HTML5", "CSS3", "Firebase"],
     deploymentLink: "",
     sourceCode: "",
   },
   {
     no: 2,
     name: "Book Store",
+    image: "",
     description: "",
     technologiesUsed: ["React JS"],
     deploymentLink: "",
@@ -17,7 +23,8 @@ const ProjectList = [
   },
   {
     no: 3,
-    name: "Comparison sorting Algorithm",
+    name: "Sorting Algorithms",
+    image: comparisonSortingAlgorithm,
     description: "",
     technologiesUsed: ["React JS"],
     deploymentLink: "",
@@ -26,6 +33,7 @@ const ProjectList = [
   {
     no: 4,
     name: "Excel Quiz",
+    image: quiz,
     description: "",
     technologiesUsed: ["React JS"],
     deploymentLink: "",
@@ -34,6 +42,7 @@ const ProjectList = [
   {
     no: 5,
     name: "Todo List",
+    image: "",
     description: "",
     technologiesUsed: ["React JS"],
     deploymentLink: "",
@@ -42,6 +51,7 @@ const ProjectList = [
   {
     no: 6,
     name: "Contact Card",
+    image: "",
     description: "",
     technologiesUsed: ["React JS"],
     deploymentLink: "",
