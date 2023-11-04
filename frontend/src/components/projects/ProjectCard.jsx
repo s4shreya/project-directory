@@ -24,12 +24,20 @@ const ProjectCard = (props) => {
     textShadow: "5px 5px 5px hotpink",
   };
 
+  // changing class for displaying butterflies animation
   const butterflyDisplayHandler = () => {
     setButterflyClass("display");
     setTimeout(() => {
       setButterflyClass("no-display");
     }, 3500);
   };
+
+  // butterflies for animation
+  const butterflies = [];
+  for (let i = 0; i < 15; i++)
+    butterflies.push(
+      <img src={butterfly} key={i} alt="butterfly" width={60} height={40} />
+    );
 
   return (
     <Card className={styles.card} id={styles.projectCard}>
@@ -44,10 +52,12 @@ const ProjectCard = (props) => {
         />
         <Typography>{project.description}</Typography>
         <div className={styles.row}>
-          <Typography className={styles.col}>
+          <Typography className={`${styles.col} ${styles["sub-heading"]}`}>
             Tech stack
             <LaptopMacIcon className={styles.icon} />
           </Typography>
+        </div>
+        <div className={styles.row}>
           {project.technologiesUsed.map((tech, index) => (
             <Chip
               key={index}
@@ -56,7 +66,7 @@ const ProjectCard = (props) => {
             />
           ))}
         </div>
-        <div className={styles.row}>
+        <div className={styles.row2}>
           <a
             href={project.deploymentLink}
             target="blank"
@@ -91,26 +101,10 @@ const ProjectCard = (props) => {
         >
           <PlayCircleIcon
             fontSize="large"
-            // style={{ color: "green", cursor: "pointer" }}
             title="click to see animation"
             onClick={butterflyDisplayHandler}
           />
-          
-          <img src={butterfly} alt="butterfly" width={60} height={40} />
-          <img src={butterfly} alt="butterfly" width={60} height={40} />
-          <img src={butterfly} alt="butterfly" width={60} height={40} />
-          <img src={butterfly} alt="butterfly" width={60} height={40} />
-          <img src={butterfly} alt="butterfly" width={60} height={40} />
-          <img src={butterfly} alt="butterfly" width={60} height={40} />
-          <img src={butterfly} alt="butterfly" width={60} height={40} />
-          <img src={butterfly} alt="butterfly" width={60} height={40} />
-          <img src={butterfly} alt="butterfly" width={60} height={40} />
-          <img src={butterfly} alt="butterfly" width={60} height={40} />
-          <img src={butterfly} alt="butterfly" width={60} height={40} />
-          <img src={butterfly} alt="butterfly" width={60} height={40} />
-          <img src={butterfly} alt="butterfly" width={60} height={40} />
-          <img src={butterfly} alt="butterfly" width={60} height={40} />
-          <img src={butterfly} alt="butterfly" width={60} height={40} />
+          {butterflies}
         </div>
       </CardContent>
     </Card>

@@ -1,5 +1,5 @@
 .card {
-  height: 500px;
+  height: 550px;
   width: 550px;
   border: 1px solid salmon;
   margin: 20px;
@@ -11,6 +11,10 @@
   border-radius: 20%;
 }
 
+.sub-heading {
+  text-align: center;
+}
+
 .icon {
   position: relative;
   top: 6px;
@@ -20,8 +24,20 @@
 
 .row {
   display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+.row p {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(76, 42, 121);
+}
+
+.row2 {
+  display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
 }
 
 .link {
@@ -35,6 +51,10 @@
 
 .tags {
   animation: dancing-tags 1s infinite;
+}
+
+.row .tags {
+  background-color: lightblue;
 }
 
 .deployment-link {
@@ -125,19 +145,19 @@
 
 @keyframes butterfly-flying {
   0% {
-    transform: translate(-550px, -500px);
+    transform: translate(-550px, -550px);
   }
   20% {
     transform: translate(-450px, 0px);
   }
   40% {
-    transform: translate(-350px, -500px);
+    transform: translate(-350px, -550px);
   }
   60% {
     transform: translate(-250px, 0px);
   }
   80% {
-    transform: translate(-150px, -500px);
+    transform: translate(-150px, -550px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -165,7 +185,9 @@
 .tags:nth-child(7) {
   animation-delay: 0.7s;
 }
-
+.tags:nth-child(8) {
+  animation-delay: 0.8s;
+}
 .butterfly-icon-displayed img:nth-child(2) {
   animation-delay: 0.1s;
 }
