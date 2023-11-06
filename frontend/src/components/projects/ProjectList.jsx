@@ -1,6 +1,9 @@
 import myMessMeal from "../../images/my-mess-meal.png";
 import comparisonSortingAlgorithm from "../../images/comparison-sorting-algorithm.png";
 import quiz from "../../images/quiz.png";
+import bookStore from "../../images/book-store.png";
+import todoListReduxToolkit from "../../images/todo-list-redux-toolkit.png";
+import contactCard from "../../images/contact-card.png";
 
 const ProjectList = [
   {
@@ -25,7 +28,7 @@ const ProjectList = [
   {
     no: 2,
     name: "Book Store",
-    image: "",
+    image: bookStore,
     description:
       "MERN Stack book store application to add, edit, remove and view books using CRUD operations.",
     technologiesUsed: [
@@ -35,9 +38,9 @@ const ProjectList = [
       "Node.js",
       "axios",
       "Mongoose",
-      "JS"
+      "JS",
     ],
-    deploymentLink: "",
+    deploymentLink: "https://fac-book-store-frontend.vercel.app/",
     sourceCode: "https://github.com/s4shreya/fac-book-store",
   },
   {
@@ -77,7 +80,7 @@ const ProjectList = [
   {
     no: 5,
     name: "Todo List",
-    image: "",
+    image: todoListReduxToolkit,
     description:
       "A simple todo list using redux-toolkit to create and add a task in the list.",
     technologiesUsed: [
@@ -88,13 +91,13 @@ const ProjectList = [
       "JavaScript",
       "ES6",
     ],
-    deploymentLink: "",
+    deploymentLink: "https://todo-list-redux-toolkit.netlify.app/",
     sourceCode: "https://github.com/s4shreya/spp-redux-toolkit",
   },
   {
     no: 6,
     name: "Contact Card",
-    image: "",
+    image: contactCard,
     description: "A simple contact card to create a post.",
     technologiesUsed: [
       "React",
@@ -104,7 +107,7 @@ const ProjectList = [
       "JavaScript",
       "ES6",
     ],
-    deploymentLink: "",
+    deploymentLink: "https://github.com/s4shreya/fac-contact-card",
     sourceCode: "https://github.com/s4shreya/fac-contact-card",
   },
 ];

@@ -1,12 +1,6 @@
 import { useState } from "react";
 
-import {
-  Card,
-  CardActions,
-  CardContent,
-  Typography,
-  Chip,
-} from "@mui/material";
+import { Card, CardContent, Typography, Chip } from "@mui/material";
 import LaptopMacIcon from "@mui/icons-material/LaptopMac";
 import LaunchIcon from "@mui/icons-material/Launch";
 import CodeIcon from "@mui/icons-material/Code";
@@ -45,7 +39,7 @@ const ProjectCard = (props) => {
         <Typography sx={titleStyle}>{project.name}</Typography>
         <img
           src={project.image}
-          alt="screenshot of my mess meal website"
+          alt="screenshot of deployed website"
           width={500}
           height={200}
           className={styles.image}
@@ -80,6 +74,7 @@ const ProjectCard = (props) => {
               <LaunchIcon className={styles.icon} />
             </Typography>
           </a>
+
           <a
             href={project.sourceCode}
             target="blank"
