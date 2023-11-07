@@ -6,4 +6,10 @@
 .title {
     font-size: 40px;
     margin: 0;
+    transition: text-decoration 2s ease-in-out;
+}
+
+.title:hover {
+    text-decoration: underline;
+    cursor: default;
 }
