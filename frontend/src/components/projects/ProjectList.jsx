@@ -4,6 +4,7 @@ import quiz from "../../images/quiz.png";
 import bookStore from "../../images/book-store.png";
 import todoListReduxToolkit from "../../images/todo-list-redux-toolkit.png";
 import contactCard from "../../images/contact-card.png";
+import learningApp from "../../images/learning-app.png";
 
 const ProjectList = [
   {
@@ -27,6 +28,24 @@ const ProjectList = [
   },
   {
     no: 2,
+    name: "Learning App",
+    image: learningApp,
+    description:
+      "Self-learning web application platform with various videos and articles of different subjects.",
+    technologiesUsed: [
+      "React",
+      "Firebase",
+      "React Router",
+      "Redux-toolkit",
+      "HTML5",
+      "CSS3",
+      "ES6",
+    ],
+    deploymentLink: "https://learning-tutorial-app.netlify.app/",
+    sourceCode: "https://github.com/s4shreya/abc-learning-app",
+  },
+  {
+    no: 3,
     name: "Book Store",
     image: bookStore,
     description:
@@ -44,7 +63,7 @@ const ProjectList = [
     sourceCode: "https://github.com/s4shreya/fac-book-store",
   },
   {
-    no: 3,
+    no: 4,
     name: "Sorting Algorithms",
     image: comparisonSortingAlgorithm,
     description:
@@ -60,7 +79,7 @@ const ProjectList = [
     sourceCode: "https://github.com/s4shreya/abc-comparison-sorting-algorithms",
   },
   {
-    no: 4,
+    no: 5,
     name: "Excel Quiz",
     image: quiz,
     description:
@@ -78,7 +97,7 @@ const ProjectList = [
     sourceCode: "https://github.com/s4shreya/abc-quiz",
   },
   {
-    no: 5,
+    no: 6,
     name: "Todo List",
     image: todoListReduxToolkit,
     description:
@@ -95,7 +114,7 @@ const ProjectList = [
     sourceCode: "https://github.com/s4shreya/spp-redux-toolkit",
   },
   {
-    no: 6,
+    no: 7,
     name: "Contact Card",
     image: contactCard,
     description: "A simple contact card to create a post.",
